@@ -1,11 +1,7 @@
 //
 // Created by 晋毓麟 on 2018/12/18.
 //
-
-#ifndef CLION_BIG_INTER_H
-#define CLION_BIG_INTER_H
-
-#endif //CLION_BIG_INTER_H
+#include <bits/stdc++.h>
 using namespace std;
 string big_add(string a,string b)
 {
