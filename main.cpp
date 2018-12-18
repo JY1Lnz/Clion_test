@@ -3,12 +3,14 @@
 #include "self_function.h"
 using namespace std;
 
-int main()
-{
-    string a,b;
-    cin>>a>>b;
-    string s = big_sub(a,b);
-    cout<<s<<endl;
+int main() {
+    string a, b;
+    while(cin>>a>>b)
+    {
+        cout<<big_add(a,b)<<endl;
+        cout<<big_sub(a,b)<<endl;
+    }
+
 
     return 0;
 }
