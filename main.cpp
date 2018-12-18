@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 //#include "big_inter_operator.cpp"
-#include "big_inter.h"
+#include "self_function.h"
 using namespace std;
-//string big_add(string,string);
+
 int main() {
     string a,b,c;
     cin>>a>>b;
