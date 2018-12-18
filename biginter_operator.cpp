@@ -3,7 +3,7 @@
 //
 #include <bits/stdc++.h>
 using namespace std;
-string big_add(string a,string b)
+string big_add(string &a,string &b)
 {
     string s;
     reverse(a.begin(),a.end());
@@ -25,6 +25,40 @@ string big_add(string a,string b)
     {
         s += char(sum%10 + '0');
         sum/=10;
+    }
+    reverse(s.begin(),s.end());
+    return s;
+}
+
+string big_sub(string &a,string &b)//忽视正负问题
+{
+    string s;
+    reverse(a.begin(),a.end());
+    reverse(b.begin(),b.end());
+    int overflow = 0;
+    for (int i = 0;i<b.length();i++)
+    {
+        a[i] = a[i] - overflow;
+        if (a[i] < b[i])
+        {
+            overflow = 1;
+            s += char((10-(b[i]-'0'))+(a[i]-'0')+'0');
+        }
+        else if (a[i] > b[i])
+        {
+            overflow = 0;
+            s += char((a[i]-'0')-(b[i]-'0')+'0');
+        }
+        else
+        {
+            s += '0';
+        }
+    }
+    for (int i = b.length();i<a.length();i++)
+    {
+        a[i] = a[i] - overflow;
+        overflow = 0;
+        s += a[i];
     }
     reverse(s.begin(),s.end());
     return s;
