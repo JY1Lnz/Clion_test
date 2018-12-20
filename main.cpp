@@ -11,6 +11,5 @@ int main() {
         cout<<big_sub(a,b)<<endl;
     }
 
-
     return 0;
 }
