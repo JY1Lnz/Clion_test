@@ -1,15 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 //#include "big_inter_operator.cpp"
 #include "self_function.h"
-using namespace std;
 
-int main() {
-    string a, b;
-    while(cin>>a>>b)
-    {
-        cout<<big_add(a,b)<<endl;
-        cout<<big_sub(a,b)<<endl;
-    }
-
+int main()
+{
+    std::vector<int> test = {5,3,1,2,4};
+    std::vector<int> result = nextExceed(test);
+    for (auto x:result)
+        cout<<x<<' ';
     return 0;
 }

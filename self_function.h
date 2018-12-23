@@ -6,5 +6,6 @@ using namespace std;
 #define CLION_SELF_FUNCTION_H
 string big_add(string a,string b);
 string big_sub(string a,string b);
+vector<int> nextExceed(vector<int> &input);
 
 #endif //CLION_SELF_FUNCTION_H

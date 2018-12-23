@@ -3,4 +3,4 @@ project(Clion)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Clion main.cpp self_function.h biginter_operator.cpp binary_tree.cpp)
+add_executable(Clion main.cpp self_function.h biginter_operator.cpp binary_tree.cpp monotonous_stack.cpp)
