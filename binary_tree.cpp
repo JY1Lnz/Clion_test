@@ -16,7 +16,7 @@ struct Node_binarytree
 
 void firstorder_traverse(Node_binarytree * root)
 {
-    cout<<root->data;
+    std::cout<<root->data;
     if (root->left != NULL)
         firstorder_traverse(root->left);
     if (root->right != NULL)
@@ -27,7 +27,7 @@ void infixorder_traverse(Node_binarytree * root)
 {
     if (root->left != NULL)
         infixorder_traverse(root->left);
-    cout<<root->data;
+    std::cout<<root->data;
     if (root->right != NULL)
         infixorder_traverse(root->right);
 }
@@ -38,5 +38,5 @@ void postorder_traverse(Node_binarytree * root)
         postorder_traverse(root->left);
     if (root->right != NULL)
         postorder_traverse(root->right);
-    cout<<root->data;
+    std::cout<<root->data;
 }
