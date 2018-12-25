@@ -7,5 +7,5 @@ using namespace std;
 string big_add(string a,string b);
 string big_sub(string a,string b);
 vector<int> nextExceed(vector<int> &input);
-
+int count_factor(int n);
 #endif //CLION_SELF_FUNCTION_H
