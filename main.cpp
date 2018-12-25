@@ -5,9 +5,11 @@
 
 int main()
 {
-    std::vector<int> test = {5,3,1,2,4};
+    std::vector<int> test = {10,3,7,4,12,2};
     std::vector<int> result = nextExceed(test);
     for (auto x:result)
         cout<<x<<' ';
+    cout<<endl;
+    cout<<count_factor(24)<<endl;
     return 0;
 }
